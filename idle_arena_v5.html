@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>Idle Arena: Skill Forge - Modern</title>
+<title>Idle Arena: Skill Forge - PoE2 Style</title>
 <style>
 :root{
   --bg:#050308;--bg2:#0f0a18;--panel:#1a1328;--panel2:#22193a;
   --gold:#e8b339;--ember:#ff6b3d;--frost:#5ec9e0;--venom:#6ed65a;
   --blood:#e0405a;--arc:#b06bff;--text:#f0e9ff;--dim:#8a7eb0;--border:#3a2b55;
+  --glow:#b06bff44;
 }
-*{box-sizing:border-box;margin:0;padding:0;}
+* {box-sizing:border-box;margin:0;padding:0;}
 html,body{height:100%;overflow:hidden;background:var(--bg);font-family:system-ui,sans-serif;color:var(--text);}
 #app{display:flex;flex-direction:column;height:100vh;}
 
-/* PoE2 dark fantasy UI */
+/* PoE2 dark fantasy header */
 #hdr{background:linear-gradient(180deg,#1e1530,#0a0612);border-bottom:4px solid var(--border);padding:12px 16px;display:flex;align-items:center;gap:16px;box-shadow:0 6px 20px rgba(0,0,0,0.8);}
 
 /* Arena */
@@ -24,9 +25,9 @@ html,body{height:100%;overflow:hidden;background:var(--bg);font-family:system-ui
 #abbtn, .ub, .db{
   background:linear-gradient(180deg,#2a1f44,#1a1328);border:2px solid #554488;color:var(--arc);
   padding:12px 24px;border-radius:9999px;font-weight:600;cursor:pointer;transition:all .2s;
-  box-shadow:0 4px 15px #b06bff44;
+  box-shadow:0 4px 15px var(--glow);
 }
-#abbtn:hover, .ub:hover{transform:translateY(-2px);box-shadow:0 8px 25px #b06bff66;}
+#abbtn:hover, .ub:hover{transform:translateY(-2px);box-shadow:0 8px 25px var(--glow);}
 
 /* Forge - PoE style */
 .doll{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:18px;padding:24px;background:radial-gradient(#1c1430,#0a0612);border:2px solid var(--border);border-radius:16px;}
@@ -40,8 +41,7 @@ html,body{height:100%;overflow:hidden;background:var(--bg);font-family:system-ui
 </head>
 <body>
 <div id="app">
-  <div id="hdr">Idle Arena: Skill Forge</div>
-  <div id="arena">Arena Area - Your game here</div>
+  <!-- Paste your original game body here -->
 </div>
 </body>
 </html>
